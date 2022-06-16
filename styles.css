@@ -1,0 +1,159 @@
+/* =======================================
+||||||||||||||FONT FAMILY|||||||||||||||||
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+/* =======================================
+|||||||||||GENERAL RESET||||||||||||||||||
+========================================== */
+html {
+box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+body{
+padding: 0;
+margin: 0;
+font-size: 15px;
+background-color: hsl(0, 0%, 95%);
+}
+
+h1,h2,h3,
+h4,h5,p{
+margin: 0;
+}
+
+a{
+text-decoration: none;
+}
+
+
+/* =======================================
+|||||||||| STYLING THE CARDS |||||||||||||
+========================================== */
+
+.cards-container{
+margin-top: 9em;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items:center;
+}
+
+
+.card{
+max-width: 400px;
+width:350px;
+height:550px;
+padding-top: 4em;
+padding-left: 3em;
+font-family:'Lexend Deca', sans-serif;
+}
+
+.card h2{
+font-family:'Big Shoulders Display', cursive;
+font-size:3em;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+color:hsl(0, 0%, 95%);
+}
+
+.card p{
+color:hsla(0, 0%, 100%, 0.75);
+font-size: 1em;
+letter-spacing:1.5px;
+line-height: 1.5;
+}
+
+
+.card-one{
+background-color:hsl(31, 77%, 52%);
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.btn-one{
+color: hsl(31, 77%, 52%);
+}
+
+.card-two{
+background-color:hsl(184, 100%, 22%);
+}
+
+.btn-two{
+color: hsl(184, 100%, 22%);
+}
+
+.card-three{
+background-color: hsl(179, 100%, 13%);
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.btn-three{
+color: hsl(179, 100%, 13%);
+}
+
+.more-btn{
+display: inline-block;
+margin-top: 8em;
+width: 173px;
+padding:17px 20px;
+border-radius: 25px;
+text-align: center;
+background-color:hsl(0, 0%, 95%);
+transition:0.5s;
+}
+
+.more-btn:hover{
+background-color: inherit;
+color: hsl(0, 0%, 95%);
+border: 3px solid hsl(0, 0%, 95%);
+}
+
+/* =======================================
+||||||||||||||| NAV LINKS|||||||||||||||||
+========================================== */
+.nav-links{
+margin-top: 4rem;
+display: flex;
+gap: 40px;
+justify-content: center;
+align-items: center;
+}
+
+.nav-links a{
+color:rgb(1,174,253);
+font-size: 3.2vw;
+}
+
+
+/* =======================================
+|||||||||||||| MEDIA QUERY||||||||||||||||
+========================================== */
+@media (max-width:650px) {
+.cards-container{
+flex-direction: column;
+align-items: center;
+margin-bottom: 3em;
+gap: 20px;
+
+} 
+
+.card{
+border-radius: 10px;
+}
+
+
+}
+
+
+
+
